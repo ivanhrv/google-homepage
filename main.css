@@ -1,0 +1,108 @@
+/* Fake Google CSS*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+#container{
+  width: 580px;
+
+  margin-left: 0 auto;
+  text-align: center; /* Centrado texto*/
+  /*Centrado del contenido*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#logo{
+  content: url(https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
+  margin: 0 auto;
+}
+input[type=search]{
+  width: 566px;
+  padding: 7px;
+  margin-top: 25px;
+  margin-bottom: 18px;
+
+  border: solid 1px #ccc;
+  font-size: 16px;
+}
+input[type=search]:hover{
+  border: solid 1px #aaa;
+}
+.boton{
+  background: #eee;
+  color: #333;
+  border: solid 1px #ccc;
+  padding: 5px;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.boton:hover{
+  cursor: pointer;
+}
+small{
+  margin: 10px 0 0 0;
+  display: block;
+  font-size: 12px;
+}
+a:link, a:visited{
+  color: dodgerblue;
+}
+header{
+  text-align: right;
+  padding: 20px;
+}
+
+header nav ul li,
+footer nav ul li{
+  display: inline;
+}
+
+header nav ul li a:link,
+header nav ul li a:visited,
+footer nav ul li a:link,
+footer nav ul li a:visited{
+  color: #555;
+  text-decoration: none;
+  padding: 10px;
+}
+
+header nav ul li a:hover,
+footer nav ul li a:hover{
+  text-decoration: underline;
+}
+footer{
+  background: #eee;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer nav{
+  padding: 20px;
+}
+footer nav ul{
+  float: left;
+}
+
+.right-links{
+  float: right;
+  text-align: right;
+}
+
+.clearfix:after{
+  content: "";
+  display: table;
+  clear: both;
+}
